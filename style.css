@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(234, 29%, 20%);
+    font-family: "Roboto", sans-serif;
+}
+
+.content {
+    display: flex;  
+    border: 1px solid black;
+    border-radius: 1rem;
+    max-width: 40rem;
+    background-color: white;
+    font-size: small;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.subscribe-form {
+    padding: 2rem;
+}
+
+img {
+    max-width: 15rem;
+    padding: 1rem;
+}
+
+ul {
+    list-style: none; /* Remove default bullet points */
+    margin-left: 5px;
+    padding: 0; 
+}
+
+ul li {
+    position: relative;
+    padding-left: 35px; 
+    margin-bottom: 12px;
+}
+
+ul li::before {
+    content: url('icon-list.svg'); /* Replace with the path to your icon */
+    position: absolute;
+    left: 0;
+    top: 60%;
+    transform: translateY(-90%);
+    width: 20px; /* Adjust the size as needed */
+    height: 20px; /* Adjust the size as needed */
+    display: inline-block;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form #email {
+    margin-bottom: 1rem;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    border: 1px solid rgb(193, 191, 191);
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+button {
+    border-radius: 0.5rem;
+    background-color: hsl(238, 29%, 18%);
+    color: white;
+    padding: 0.5rem;
+}
+
+.invalid {
+    border: 2px solid red;
+}
+
+#error-message {
+    color: red;
+}
