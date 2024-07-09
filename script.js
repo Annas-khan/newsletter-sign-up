@@ -1,5 +1,8 @@
 const emailInput = document.querySelector("input");
 const form = document.querySelector("form");
+const successState = document.querySelector(".success-state");
+const contentDiv = document.querySelector(".content");
+
 
 form.addEventListener("submit", function(e) {
     e.preventDefault();
@@ -14,7 +17,8 @@ form.addEventListener("submit", function(e) {
         errorMessage.style.display ='block';    
     } else {
         emailInput.classList.remove('invalid');
+        successState.style.display = "block";
+        contentDiv.style.display = "none";
         errorMessage.style.display = "none";
-        alert('email is valid');
     };
 });     

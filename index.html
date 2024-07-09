@@ -22,7 +22,7 @@
                 </ul>
                 <form>
                     <label for="email"> Email address </label>
-                    <input type="email" id="email" name="email" placeholder="email@company.com">
+                    <input type="email" class="email" name="email" placeholder="email@company.com">
                     <p id="error-message" style="display: none;">Invalid message</p>
                     <button> Subscribe to monthly newsletter </button>
                 </form>
@@ -31,8 +31,16 @@
                 <img src="illustration-sign-up-desktop.svg" alt="image-left">
             </div> 
         </div>
+        <section>
+            <div class="success-state" style="display: none;">
+                <img src="icon-success.svg" alt="icon-image">
+                <h1> Thanks for subscribing !</h1>
+                <p> A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.</p>
+                <button> Dismiss message </button>
+            </div>
+        </section>
     </main>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
